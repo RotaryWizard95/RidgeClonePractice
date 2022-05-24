@@ -6,7 +6,6 @@ html {
     font-size: 15px;
     font-weight: 700;
     font-family: 'roboto', sans-serif;
-    background-color: black;
 }
 
 .mobile-header, .tablet-header {
@@ -62,4 +61,58 @@ li {
 li a {
     text-decoration: none;
     color: #111;
+}
+
+.display {
+    display: block;
+    position: relative;
+    top: 70px;
+}
+
+.desktop-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 14%;    
+}
+
+.large-text {
+    font-size: 36px;
+    padding:10px;
+}
+
+.small-text {
+    font-size: 15px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .large-text {
+        font-size: 70px;
+    }
+
+    .small-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 975px) and (max-width: 1399px) {
+    .large-text {
+        font-size: 48px;
+    }
+
+    .small-text {
+        font-size: 16px;
+    }
 }
